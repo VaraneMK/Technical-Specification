@@ -1,0 +1,131 @@
+.App {
+	height: 100dvh;
+	width: 100dvw;
+	display: flex;
+}
+
+.navbar {
+	width: 30%;
+
+	padding: 90px 24px 42px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar__title {
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 19.36px;
+	color: #5175d3;
+
+	text-transform: uppercase;
+}
+
+.content {
+	width: 73%;
+	background: #f1f1f1;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.placeholder__block {
+	width: 662px;
+	height: 350px;
+
+	border-radius: 10px;
+
+	box-shadow: -2px 4px 32.1px 5px #63656c0d;
+
+	padding: 20px;
+}
+
+.placeholder__text {
+	border: 1px dashed #484545;
+	border-radius: 10px;
+
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list {
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+
+	overflow-y: scroll;
+	overflow-x: visible;
+}
+
+.list h3 {
+	margin-bottom: 10px;
+}
+
+.inputs {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.inputs_side {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.group_title {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19.36px;
+
+	margin-bottom: 5px;
+}
+
+.preview {
+	width: 472px;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+
+	margin: auto;
+}
+
+.preview button {
+	margin-top: 15px;
+}
+
+.viewer_block {
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 30px;
+}
+
+.webviewer {
+	height: 100%;
+	width: 700px;
+}

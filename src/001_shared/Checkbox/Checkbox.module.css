@@ -1,0 +1,64 @@
+.control {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	cursor: pointer;
+
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19.36px;
+
+	color: #484545;
+}
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.control_indicator {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background: #f1f1f1;
+	border: 0px solid #000000;
+	border-radius: 4px;
+}
+.control:hover input ~ .control_indicator {
+	background: #9cb1e8;
+}
+
+.control input:checked ~ .control_indicator {
+	background: #5175d3;
+}
+
+.control input:disabled ~ .control_indicator {
+	background: #e6e6e6;
+	opacity: 0.6;
+	pointer-events: none;
+}
+.control_indicator:after {
+	box-sizing: unset;
+	content: '';
+	position: absolute;
+	display: none;
+}
+.control input:checked ~ .control_indicator:after {
+	display: block;
+}
+.control_checkbox .control_indicator:after {
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 0px;
+	border: solid #ffffff;
+	border-width: 0 0px 0px 0;
+	transform: rotate(45deg);
+}
+.control_checkbox input:disabled ~ .control_indicator:after {
+	border-color: #7b7b7b;
+}
